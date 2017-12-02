@@ -23,4 +23,9 @@ public class HomeController extends Controller {
 
     return ok(requestHeaderContent.concat("\n").concat(service.sayHi()));
   }
+
+
+  public Result pathVariable(String id) {
+    return ok(String.format("Getting resource with id: %s", id));
+  }
 }
