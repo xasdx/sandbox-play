@@ -1,9 +1,9 @@
-package controllers;
+package controller;
 
 import com.google.inject.Inject;
 import play.mvc.Controller;
 import play.mvc.Result;
-import services.HomeService;
+import service.HomeService;
 
 import java.util.stream.Collectors;
 
