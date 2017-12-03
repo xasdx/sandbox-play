@@ -7,3 +7,5 @@ sbt-dist
 /.project
 /.settings
 /RUNNING_PID
+sbt
+sbt.bat
