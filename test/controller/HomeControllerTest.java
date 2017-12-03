@@ -21,4 +21,13 @@ public class HomeControllerTest {
     assertThat(result.status()).isEqualTo(Http.Status.OK);
     assertThat(contentAsString(result)).endsWith(customId);
   }
+
+  @Test
+  public void returnsJsonContentType() {
+    Result result = underTest.things();
+
+    assertThat(result.status()).isEqualTo(Http.Status.OK);
+    assertThat(result.contentType()).isPresent();
+    assertThat(result.contentType().get()).isEqualTo(Http.MimeTypes.JSON);
+  }
 }

@@ -1,2 +1,3 @@
 GET     /                         controller.HomeController.index
 GET     /things/:id               controller.HomeController.pathVariable(id: String)
+GET     /things                   controller.HomeController.things
