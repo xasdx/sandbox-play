@@ -1,16 +1,17 @@
 package controller;
 
+import controllers.ThingController;
 import org.junit.Test;
 import play.mvc.Http;
 import play.mvc.Result;
-import service.HomeService;
+import services.ThingService;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static play.test.Helpers.contentAsString;
 
-public class HomeControllerTest {
+public class ThingControllerTest {
 
-  private HomeController underTest = new HomeController(new HomeService());
+  private ThingController underTest = new ThingController(new ThingService());
 
   @Test
   public void returnsPathVariable() {
